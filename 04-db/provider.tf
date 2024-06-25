@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "anuprasad2024-reomte-state"
+    bucket = "anuprasad-dev"
     key    = "expense-dev-db1"
     region = "us-east-1"
-    dynamodb_table = "anuprasad2024-locking"
+    dynamodb_table = "anuprasad-dev-locking"
   }
 }
 
